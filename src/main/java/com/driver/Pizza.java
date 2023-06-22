@@ -61,17 +61,17 @@ public class Pizza {
     public String getBill(){
         // your code goes here
        if(isVeg) {
-           bill += "" + "Base Price Of The Pizza: " + 300 + "\n";
+           bill +=  "Base Price Of The Pizza: 300" +  '\n';
        }
        else {
-           bill += "" + "Base Price Of The Pizza: 400" + "\n";
+           bill += "Base Price Of The Pizza: 400" + '\n';
        }
 
-       if(isCheeseAdded) bill += "Extra Cheese Added: 80"+"\n";
-       if(isExtraToppingsAdded && isVeg) bill += "Extra Toppings Added: 70"+"\n";
-       else if(isExtraToppingsAdded && !isVeg) bill += "Extra Toppings Added: 120"+"\n";
-       if(istakeAwayAdded) bill+= "Paperbag Added: 20"+"\n";
-      bill +=  "Total Price: "+ price;
+       if(isCheeseAdded) bill += "Extra Cheese Added: 80"+'\n';
+       if(isExtraToppingsAdded && isVeg) bill += "Extra Toppings Added: 70"+'\n';
+       else if(isExtraToppingsAdded && !isVeg) bill += "Extra Toppings Added: 120"+'\n';
+       if(istakeAwayAdded) bill+= "Paperbag Added: 20"+'\n';
+      bill +=  "Total Price: "+ price +'\n';
       return bill;
     }
 
